@@ -48,12 +48,12 @@
                             <img src="./assets/kitchen-1.png" alt="Shoes"
                                 class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
                         </figure>
-                        <div class="card-body text-center">
+                        <div class="card-body text-center rounded-2xl">
                             <p>⭐⭐⭐⭐⭐</p>
                             <h2 class="card text-center font-bold text-[20px]">K. Accessories</h2>
-                            <p><span>150.00</span>tk</p>
+                            <p><span class="product-price" id="price-of-product">150.00</span>tk</p>
                             <div class="card-actions flex justify-center items-center">
-                                <button class="btn btn-primary">Add to card</button>
+                                <button class="btn btn-primary" id="btn-id">Add to card</button>
 
                             </div>
                         </div>
@@ -63,10 +63,10 @@
                             <img src="./assets/kitchen-1.png" alt="Shoes"
                                 class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
                         </figure>
-                        <div class="card-body text-center">
+                        <div class="card-body text-center rounded-2xl">
                             <p>⭐⭐⭐⭐⭐</p>
                             <h2 class="card text-center font-bold text-[20px]">K. Accessories</h2>
-                            <p><span>150.00</span>tk</p>
+                            <p><span class="product-price" id="price-of-product">150.00</span>tk</p>
                             <div class="card-actions flex justify-center items-center">
                                 <button class="btn btn-primary">Add to card</button>
 
@@ -78,10 +78,10 @@
                             <img src="./assets/kitchen-1.png" alt="Shoes"
                                 class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
                         </figure>
-                        <div class="card-body text-center">
+                        <div class="card-body text-center rounded-2xl">
                             <p>⭐⭐⭐⭐⭐</p>
                             <h2 class="card text-center font-bold text-[20px]">K. Accessories</h2>
-                            <p><span>150.00</span>tk</p>
+                            <p><span class="product-price" id="price-of-product">150.00</span>tk</p>
                             <div class="card-actions flex justify-center items-center">
                                 <button class="btn btn-primary">Add to card</button>
 
@@ -94,24 +94,152 @@
 
             </div>
 
-            <div class="store-card col-span-3">
-                <h3>have a coupn ?</h3>
-                <div class="join">
-                    <div>
-                        <label class="input validator join-item">
-                            <svg class="h-[1em] opacity-50" viewBox="0 0 24 24">
-                                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
-                                    stroke="currentColor">
-                                    
-                                    
-                                </g>
-                            </svg>
-                            <input type="text" placeholder="" required />
-                        </label>
-                        <div class="validator-hint hidden">Enter valid email address</div>
+
+
+            <!-- .......................aside sections here ................... -->
+
+            <div class="store-card col-span-3 " id="divv">
+                <div class="bg-white h-[130px] p-[20px]">
+                    <h3 class="text-[20px] font-semibold">have a coupn ?</h3>
+                    <div class="join">
+                        <div>
+                            <label class="input validator join-item">
+                                <svg class="h-[1em] opacity-50" viewBox="0 0 24 24">
+                                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                        stroke="currentColor">
+
+
+                                    </g>
+                                </svg>
+                                <input type="text" placeholder="" required />
+                            </label>
+
+                        </div>
+                        <button class="btnn btn-secondary rounded-r-[10px]">apply</button>
                     </div>
-                    <button class="btn btn-secondary">Secondary</button>
                 </div>
+                <br>
+                <div class="bg-white h-[130px] p-[20px]" id="price-add-boucher">
+                    <div class="">
+                        <h2>Total Price: <span id="total-price">0</span> TK</h2>
+                        <h2>Total Quantity: <span id="total-quantity">0</span> Items</h2>
+                        <button class="btnnn bg-pink-500 text-white btn-block">
+                            Make Purchase
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- aside scection end here -->
+
+
+            <div class="shoping-items  col-span-9">
+                <h3 class="font-semibold text-[40px] mb-[20px]">Sportswear</h3>
+                <div class="shoping-card grid grid-cols-3 gap-[20px]">
+                    <div class="flex flex-col justify-center items-center  bg-white rounded-">
+                        <figure>
+                            <img src="./assets/sports-1.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center rounded-2xl">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">Sports Back Cap</h2>
+                            <p><span class="product-price" id="price-of-product">350.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center  bg-white">
+                        <figure>
+                            <img src="./assets/sports-2.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center rounded-2xl">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">Full Jersey Set</h2>
+                            <p><span class="product-price" id="price-of-product">460.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center  bg-white ">
+                        <figure>
+                            <img src="./assets/sports-3.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center rounded-[15px]">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">Sports cates</h2>
+                            <p><span class="product-price" id="price-of-product">430.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="shoping-items  col-span-9">
+                <h3 class="font-semibold text-[40px] mb-[20px]">Furniture</h3>
+                <div class="shoping-card grid grid-cols-3 gap-[20px]">
+                    <div class="flex flex-col justify-center items-center  bg-white">
+                        <figure>
+                            <img src="./assets/furniture-1.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center rounded-2xl">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">Single Relax Chair</h2>
+                            <p><span class="product-price" id="price-of-product">250.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center  bg-white">
+                        <figure>
+                            <img src="./assets/furniture-2.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center rounded-2xl">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">Children play</h2>
+                            <p><span class="product-price" id="price-of-product">850.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center  bg-white ">
+                        <figure>
+                            <img src="./assets/furniture-3.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center rounded-2xl">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">Flexible Sofa</h2>
+                            <p><span class="product-price" id="price-of-product">950.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
         </div>
