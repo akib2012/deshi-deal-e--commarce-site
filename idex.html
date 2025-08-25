@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="😊">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>deshi desls</title>
 </head>
-<body>
-    <h1>hello</h1>
+
+<body class="bg-gray-100">
+    <header>
+        <section class="logo flex justify-center items-center gap-[10px] mt-[20px] shadow pb-[20px] bg-white">
+            <div class="logo-par">
+                <img src="./assets/logo.png" alt="logo" class="w-[80px] h-[80px] ">
+            </div>
+            <div class="title-part">
+                <h2 class="titile text-[#E71580] text-[35px]">Deshi <span class="font-bold">Deals</span></h2>
+                <p class="title-p text-[#797075] text-[17px] font-semibold">Cheap Price , Best Quality</p>
+            </div>
+        </section>
+        <!-- <hr class="shadow-[6px] shadow-black"> -->
+        <section
+            class="banner bg-gradient-to-l from-[#F6DDEA] to-[#FFFFFF] text-center pt-[150px] h-[93vh] relative z-0">
+            <h2 class="font-bold text-[48px]">Purchase TK 200 or above & get </h2>
+            <h2 class="font-bold text-[38px] text-[#E527B2]">20% off</h2>
+            <div class="sall mt-[40px] flex justify-center items-center gap-[40px]">
+                <p class="sall-p font-bold text-[18px]">Use Promo Code</p>
+                <button class="btn btn-secondary w-[200px]">SELL200</button>
+            </div>
+            <img src="./assets/hero-bg.png" alt="hero" class="mx-auto absolute left-1/5">
+
+        </section>
+
+
+    </header>
+
+    <main class="w-10/12 mx-auto mt-[200px]">
+        <div class="shopping grid grid-cols-12 gap-x-10">
+
+            <div class="shoping-items  col-span-9">
+                <h3 class="font-semibold text-[40px] mb-[20px]">Kitchenware</h3>
+                <div class="shoping-card grid grid-cols-3 gap-[20px]">
+                    <div class="flex flex-col justify-center items-center  bg-white">
+                        <figure>
+                            <img src="./assets/kitchen-1.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">K. Accessories</h2>
+                            <p><span>150.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center  bg-white">
+                        <figure>
+                            <img src="./assets/kitchen-1.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">K. Accessories</h2>
+                            <p><span>150.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center  bg-white ">
+                        <figure>
+                            <img src="./assets/kitchen-1.png" alt="Shoes"
+                                class="bg-gray-100 py-[30px] px-[90px] rounded-2xl mt-[20px]">
+                        </figure>
+                        <div class="card-body text-center">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <h2 class="card text-center font-bold text-[20px]">K. Accessories</h2>
+                            <p><span>150.00</span>tk</p>
+                            <div class="card-actions flex justify-center items-center">
+                                <button class="btn btn-primary">Add to card</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="store-card col-span-3">
+                <h3>have a coupn ?</h3>
+                <div class="join">
+                    <div>
+                        <label class="input validator join-item">
+                            <svg class="h-[1em] opacity-50" viewBox="0 0 24 24">
+                                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                    stroke="currentColor">
+                                    
+                                    
+                                </g>
+                            </svg>
+                            <input type="text" placeholder="" required />
+                        </label>
+                        <div class="validator-hint hidden">Enter valid email address</div>
+                    </div>
+                    <button class="btn btn-secondary">Secondary</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
