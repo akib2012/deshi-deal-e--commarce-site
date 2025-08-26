@@ -3,46 +3,19 @@ function getId(id) {
     let getid = document.getElementById(id).innerText;
     return getid;
 }
-
+let emne;
 const btns = document.getElementsByClassName("btn");
 for (let bt of btns) {
     bt.addEventListener('click',
         function () {
 
-            const divs = document.getElementById("divv");
-            const newDiv = document.createElement("div");
-
-            const emne = divs.insertBefore(newDiv, divs.children[1]);
-
-            emne.innerHTML = `<div class="bg-white h-[130px] p-[20px]">
-                    <h3 class="text-[20px] font-semibold">have a coupn ?</h3>
-                    <div class="join">
-                        <div>
-                            <label class="input validator join-item">
-                                <svg class="h-[1em] opacity-50" viewBox="0 0 24 24">
-                                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
-                                        stroke="currentColor">
-
-
-                                    </g>
-                                </svg>
-                                <input type="text" placeholder="" required />
-                            </label>
-
-                        </div>
-                        <button class="btnn btn-secondary rounded-r-[10px]">apply</button>
-                    </div>
-                </div>`
-            
-            
-            
-            
-
-            
-
 
 
             let price = bt.parentNode.parentNode.children[2].children[0].innerText;
+            let title  = bt.parentNode.parentNode.children[1].innerText;
+            let img = bt.parentNode.parentNode.parentNode.children[0].src;
+            
+            
 
             // console.log(price);
             let tottal_price = getId("total-price");
@@ -58,13 +31,65 @@ for (let bt of btns) {
 
             document.getElementById("total-quantity").innerText = quantity;
 
+
+            /* add or append any html elemtns any places  */
+            const divs = document.getElementById("clears-all");
+            const newDiv = document.createElement("div");
+
+            emne = divs.appendChild(newDiv);  //here add amy place to add new elements 
+
+            emne.innerHTML = ` <br> <div class="bg-white h-[100px] p-[20px]" id="price-add-bouchers" class = "remove">
+                    <div class="flex justify-between items-center">
+                        <img src="${img}" alt="" class="w-[50px] h-[60px] p-[5px]">
+                        <div>
+                            <h4>${title}</h4>
+                            <h4>Price: <span id="total-prices">${price}</span> TK</h4>
+                            
+                        </div>
+                        <button class="btn btn-secondary rounded-r-[10px]" id="removeit">remove</button>
+                    
+
+                    </div>
+
+
+                </div>`
+        //  return emne;
+
         }
     )
 }
 
 
+/* clear all button functionality  here */
+
+document.getElementById("clear-btn").addEventListener("click",
+    function() {
+        const divsss = document.getElementById("clears-all");
+        divsss.innerHTML = "";
+        // console.log("her click the clear button");
+        document.getElementById("total-price").innerText = "0";
+        document.getElementById("total-quantity").innerText = "0";
+        
 
 
+    }
+)
+
+
+
+/* document.getElementById("removeit").addEventListener("click",
+    function(){
+        console.log("remove button cliked !!!");
+    }
+) */
+
+
+/* document.getElementById("btn-clear").addEventListener("click", function () {
+  const cartContainer = getElement("cart-container");
+  cartContainer.innerHTML = "";
+  getElement("total-quantity").innerText = 0;
+  getElement("total-price").innerText = 0;
+}); */
 
 
 
